@@ -1,0 +1,130 @@
+
+
+body{
+    width: 100vw;  /*viewport: vw - largura / vh - altura */
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;  
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container .countdowns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .countdowns> header> h1{
+    font-size: 2.75rem;
+    font-weight: 500;  /* maximo do google fonts no projeto */
+    color: var(--purple);
+    text-transform: uppercase;
+    letter-spacing: .15rem; /*espaço entre as letras do tituolo */
+}
+
+ .countdowns .countdowns-timer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*mesma lógica da pokedex, repete  4 vezes e reparte as 4 em 1 fração */
+    gap: 1rem;
+    
+ }
+
+ .countdowns .countdowns-timer .countdowns-timer-itens{
+    margin-top: 1.2rem;
+    text-align: center;
+
+ }
+
+ .countdowns .countdowns-timer  .countdown-text{
+    font-size: .925rem;
+    font-weight: 300;
+    color: var( --text-color);
+   }
+
+   .countdowns .countdowns-timer  .countdowns-number{
+    font-size: 5rem;
+    font-weight: 400;
+    color:var(--black);
+   }
+
+   .container .countdowns> footer{
+    margin-top: 2rem; /* 32px */
+    text-align: center;
+   }
+
+   .container .countdowns> footer> span{
+    font-size: 16px;
+    display: block; /* pro botao descer ja q ele tem display inline */
+    font-weight: 400;
+    color: var(--black);
+   }
+   .container .countdowns> footer> button{
+    margin-top: 2rem;
+    border:none;
+    border-radius: 7px;
+    padding: .75rem 3rem;
+    color: var(--white);
+    font-weight: 500;
+    background-color: var(--purple);
+    cursor: pointer;
+    position: relative;
+    transition: all 250ms linear ;
+    
+   }
+
+   .container .countdowns> footer> button:hover{
+    transform:scale(1.2, 1.2);
+    border: 2px solid var(--purple);
+    color: var(--purple);
+    background: transparent;
+
+   }
+
+   .hero-image #top-image{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+   }
+
+   .hero-image #bottom-image{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom:-4rem;
+   }
+
+   @media (max-width: 1080px){
+    .container{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .container .countdowns> header> h1{
+        font-size: 1.5rem;
+    }
+    .container .hero-image img{
+        width: 85%;
+    }
+   }
+   @media (min-width:775px){
+    #top-image{
+        margin: -2.5rem
+        
+    }
+    #bottom-image{
+        margin: -2.5rem;
+    }
+   }
