@@ -3,10 +3,10 @@ Projeto countdown Rocketseat
 
 ## 📹 Apresentação do projeto
 <div align="center">
-  <video src="" >
+  <video src="https://user-images.githubusercontent.com/99294586/205360835-2d307418-a238-41ed-8e2b-94c99e163258.mp4" >
 </div>
 
-> Acesse o projeto online **[AQUI]()**
+> Acesse o projeto online **[AQUI](https://ycountdown.netlify.app/)**
 ## 🚀 Tecnologias utilizadas
 
 - [HTML5] 
