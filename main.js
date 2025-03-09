@@ -5,7 +5,7 @@ const textoHoras = document.querySelector('#horas')
 const textoMinutos = document.querySelector('#minutos')
 const textoSegundos = document.querySelector('#segundos')
 
-const AnoNovo = new Date('1 Jan 2023')
+const AnoNovo = new Date('1 Jan 2040')
 
 setInterval(() =>{      //método que chama função em intervalos especificados
 
